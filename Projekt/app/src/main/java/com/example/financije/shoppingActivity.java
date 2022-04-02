@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -32,22 +33,25 @@ public class shoppingActivity extends AppCompatActivity {
         searchBox = findViewById(R.id.pretraga);
 
         Button btmSearch = findViewById(R.id.searchBtn);
-        btmSearch.setOnClickListener(view -> {
-            CharSequence user_in_char = searchBox.getText();
-            String user_in = user_in_char.toString();
-            int i;
-            for (i = 0; i < allProdukt.size(); i++){
-                if(allProdukt.get(i).getName().contains(user_in)){
-                    pokazi.add(allProdukt.get(i));
+        btmSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                CharSequence user_in_char = searchBox.getText();
+                String user_in = user_in_char.toString();
+                int i;
+                for (i = 0; i < allProdukt.size(); i++) {
+                    if (allProdukt.get(i).getName().contains(user_in)) {
+                        pokazi.add(allProdukt.get(i));
+                    }
                 }
             }
-
-
         });
 
         if(pokazi != null) {
             adapter.setProdukt(Utils.getInstance().getAllProdukt());
-        }else{
+        }
+        else
+        {
             adapter.setProdukt(Utils.getInstance().getPokazi());
             pokazi = null;
         }
