@@ -8,6 +8,9 @@ allprojects {
         google()
         jcenter()
         mavenCentral()
+        maven {
+            url 'https://kommunicate.jfrog.io/artifactory/kommunicate-android-sdk'
+        }
     }
 }
 task clean(type: Delete) {

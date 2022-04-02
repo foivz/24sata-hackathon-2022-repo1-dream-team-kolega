@@ -12,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Financije">
         <activity
-            android:name=".FamilyActivity"
+            android:name=".Chatbot"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".LoadingActivity"
@@ -24,10 +27,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AutoActivity"
+            android:name=".FamilyActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".AutoActivity"
             android:exported="false" />
         <activity
             android:name=".ProduktActivity"
@@ -39,14 +42,11 @@
             android:name=".AnalizaActivity"
             android:exported="false" />
         <activity
-            android:name=".TroskoviActivity"
-            android:exported="false" />
-        <activity
             android:name=".shoppingActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

@@ -4,17 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Projekt/app/src/main/res/layout/activity_analiza.xml" value="0.358695652173913" />
+        <entry key="..\:/Projekt/app/src/main/res/layout/activity_auto.xml" value="0.358695652173913" />
+        <entry key="..\:/Projekt/app/src/main/res/layout/activity_chatbot.xml" value="0.18802083333333333" />
+        <entry key="..\:/Projekt/app/src/main/res/layout/activity_family.xml" value="0.358695652173913" />
+        <entry key="..\:/Projekt/app/src/main/res/layout/activity_loading.xml" value="0.358695652173913" />
+        <entry key="..\:/Projekt/app/src/main/res/layout/activity_login.xml" value="0.358695652173913" />
         <entry key="..\:/Projekt/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Projekt/app/src/main/res/layout/activity_produkt.xml" value="0.358695652173913" />
         <entry key="..\:/Projekt/app/src/main/res/layout/activity_shopping.xml" value="0.358695652173913" />
+        <entry key="..\:/Projekt/app/src/main/res/layout/activity_shopping_list.xml" value="0.358695652173913" />
         <entry key="..\:/Projekt/app/src/main/res/layout/activity_troskovi.xml" value="0.358695652173913" />
         <entry key="..\:/Projekt/app/src/main/res/layout/list_shop.xml" value="0.358695652173913" />
-        <entry key="..\:/Users/Josip/Documents/GitHub/24sata-hackathon-2022-repo1-dream-team-kolega/Projekt/app/src/main/res/layout/activity_auto.xml" value="0.18802083333333333" />
-        <entry key="..\:/Users/Josip/Documents/GitHub/24sata-hackathon-2022-repo1-dream-team-kolega/Projekt/app/src/main/res/layout/activity_family.xml" value="0.22" />
-        <entry key="..\:/Users/Josip/Documents/GitHub/24sata-hackathon-2022-repo1-dream-team-kolega/Projekt/app/src/main/res/layout/activity_loading.xml" value="0.25" />
-        <entry key="..\:/Users/Josip/Documents/GitHub/24sata-hackathon-2022-repo1-dream-team-kolega/Projekt/app/src/main/res/layout/activity_login.xml" value="0.18802083333333333" />
-        <entry key="..\:/Users/Josip/Documents/GitHub/24sata-hackathon-2022-repo1-dream-team-kolega/Projekt/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/Josip/Documents/GitHub/24sata-hackathon-2022-repo1-dream-team-kolega/Projekt/app/src/main/res/layout/content_dodavanje_auta.xml" value="0.338768115942029" />
-        <entry key="..\:/Users/Josip/Documents/GitHub/24sata-hackathon-2022-repo1-dream-team-kolega/Projekt/app/src/main/res/layout/fragment_first.xml" value="0.338768115942029" />
       </map>
     </option>
   </component>

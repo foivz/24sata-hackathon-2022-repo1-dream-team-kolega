@@ -6,4 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".ShoppingListActivity">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/shopListRec"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_margin="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

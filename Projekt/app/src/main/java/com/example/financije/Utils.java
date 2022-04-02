@@ -1,10 +1,5 @@
 package com.example.financije;
 
-import static java.lang.Integer.parseInt;
-
-import com.opencsv.CSVReader;
-
-import java.io.FileReader;
 import java.util.ArrayList;
 
 public class Utils {
@@ -22,41 +17,21 @@ public class Utils {
         }
     }
 
-    private void initData()
-    {
+    private void initData() {
+        //TODO: add initial data
+        allProdukt.add(new Baza("kobasa","50 kn","https://ferbezar.com/wp-content/uploads/2016/11/slavonska-kobasica1.jpg",1));
+        allProdukt.add(new Baza("Hren","20 kn","https://podravkaiovariations.azureedge.net/05aa6e54-8f62-11ea-916b-fefaf5a5a600/v/9ed607bc-4c1b-11ea-9bb0-92f307bc0925/450x600-9ed6ed4e-4c1b-11ea-9140-92f307bc0925.png",2));
+        allProdukt.add(new Baza("Paradajs","10 kn","https://alternativa-za-vas.com/images/uploads/paradajz3.jpg",3));
 
-        try {
-            allProdukt.add(new Baza("https://i.stack.imgur.com/SNKGt.png", "Lopov", "17.99", "internet", "wifi", 5000));
-
-            // Create an object of filereader
-            // class with CSV file as a parameter.
-            FileReader filereader = new FileReader("C:\\Users\\haka\\Documents\\GitHub\\24sata-hackathon-2022-repo1-dream-team-kolega\\database2.csv");
-
-            // create csvReader object passing
-            // file reader as a parameter
-            CSVReader csvReader = new CSVReader(filereader);
-            String[] nextRecord;
-
-            // we are going to read data line by line
-            while ((nextRecord = csvReader.readNext()) != null) {
-                for (String cell : nextRecord) {
-                    String[] middleman = cell.split("\",\"");
-                    allProdukt.add(new Baza(middleman[0], middleman[1], middleman[2], middleman[3], middleman[4], parseInt(middleman[5])));
-
-                }
-
-            }
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 
     public static synchronized Utils getInstance() {
-        if (null == instance) {
+        if (null != instance){
+            return instance;
+        }else{
             instance = new Utils();
+            return instance;
         }
-        return instance;
     }
 
     public static ArrayList<Baza> getAllProdukt() {
@@ -75,4 +50,7 @@ public class Utils {
         }
         return null;
     }
+     public boolean addToShopCart(Baza produkt){
+        return  shoppingList.add(produkt);
+     }
 }

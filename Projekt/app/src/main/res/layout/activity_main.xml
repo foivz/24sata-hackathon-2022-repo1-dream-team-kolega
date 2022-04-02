@@ -20,27 +20,29 @@
         android:src="@drawable/ic_help"
         android:id="@+id/helpButton1"/>
 
-    <Button
-        android:id="@+id/troskoviBtn"
-        android:layout_width="124dp"
-        android:layout_height="75dp"
-        android:text="Troskovi"
+    <ImageButton
+        android:id="@+id/Family"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Family"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintHorizontal_bias="0.953"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.271" />
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/ic_add" />
 
     <Button
         android:id="@+id/shoppingBtn"
         android:layout_width="118dp"
         android:layout_height="81dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="172dp"
         android:text="Shopping"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/troskoviBtn" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/predictionBtn"
@@ -58,23 +60,9 @@
         android:id="@+id/shoppingList"
         android:layout_width="113dp"
         android:layout_height="82dp"
-        android:text="Shopping lista"
+        android:text="Potrosnja"
         app:layout_constraintBottom_toTopOf="@+id/predictionBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/shoppingBtn" />
-
-    <ImageButton
-        android:id="@+id/Family"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="Family"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.953"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="@drawable/ic_add" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

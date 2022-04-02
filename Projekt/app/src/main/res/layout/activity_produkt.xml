@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProduktActivity">
+    tools:context=".ProduktActivity"
+    android:layout_margin="7dp">
 
     <ImageView
         android:id="@+id/produktImg"
@@ -38,7 +39,7 @@
         app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.858" />
+        app:layout_constraintVertical_bias="0.948" />
 
     <Button
         android:id="@+id/addFavorite"
@@ -49,5 +50,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNameProdukt" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNameProdukt"
+        app:layout_constraintVertical_bias="0.322" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

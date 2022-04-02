@@ -1,14 +1,14 @@
 package com.example.financije;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class LoadingActivity extends AppCompatActivity {
 
-    boolean isLogedIn=false;//TODO:Nesto bolje od ovog
+    boolean isLogedIn=true;//TODO:Nesto bolje od ovog
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

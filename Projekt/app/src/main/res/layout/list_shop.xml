@@ -46,7 +46,9 @@
             android:layout_toRightOf="@+id/textcijena"
             android:layout_below="@id/textProdukt"
             android:layout_marginLeft="90dp"
-            android:id="@+id/add1"/>
+            android:id="@+id/add1"
+            android:scaleX="0"
+            android:scaleY="0"/>
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

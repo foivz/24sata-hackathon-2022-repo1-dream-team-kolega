@@ -1,15 +1,13 @@
 package com.example.financije;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -39,6 +37,7 @@ class User{
         this.password = password;
     }
 }
+
 public class LoginActivity extends AppCompatActivity {
 
 
@@ -125,7 +124,7 @@ public class LoginActivity extends AppCompatActivity {
             else {
                 Toast.makeText(this, "Registrirani ste. Nastavljamo na postavke obitelji i prijevoza", Toast.LENGTH_SHORT).show();
                 users.add(new User(family.getText().toString(),password.getText().toString()));
-                Intent intent=new Intent(LoginActivity.this,FamilyActivity.class);
+                Intent intent=new Intent(LoginActivity.this,AutoActivity.class);
                 startActivity(intent);
 
             }
