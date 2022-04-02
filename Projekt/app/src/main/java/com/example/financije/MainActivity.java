@@ -31,9 +31,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
         Utils.getInstance();
     }
 
+    public void startBot(){
+        Intent intent = new Intent(MainActivity.this, ShoppingListActivity.class);
+        startActivity(intent);
+    }
     private void initViews(){
         shoppingBtn = findViewById(R.id.shoppingBtn);
         predictionBtn = findViewById(R.id.predictionBtn);
