@@ -3,14 +3,18 @@ package com.example.financije;
 public class Baza {
     private int id;
     private String name;
+    private String store;
+    private String tag;
     private String price;
     private String link;
 
 
-    public Baza(String name, String price, String link, int id) {
+    public Baza(String link, String name, String price, String store, String tag, int id) {
+        this.link = link;
         this.name = name;
         this.price = price;
-        this.link = link;
+        this.store = store;
+        this.tag = tag;
         this.id = id;
     }
 
