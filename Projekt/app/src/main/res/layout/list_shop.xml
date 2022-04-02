@@ -39,5 +39,14 @@
             android:layout_marginBottom="5sp"
             android:text="Cijena"
             android:textSize="16sp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add"
+            android:layout_toRightOf="@+id/textcijena"
+            android:layout_below="@id/textProdukt"
+            android:layout_marginLeft="90dp"
+            android:id="@+id/add1"/>
+
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

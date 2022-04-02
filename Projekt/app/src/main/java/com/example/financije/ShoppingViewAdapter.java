@@ -1,6 +1,9 @@
 package com.example.financije;
 
+import static com.example.financije.ProduktActivity.PRODUKT_ID_KEY;
+
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +22,7 @@ import java.util.ArrayList;
 public class ShoppingViewAdapter extends RecyclerView.Adapter<ShoppingViewAdapter.ViewHolder>{
 
     private ArrayList<Baza> produkt = new ArrayList<>();
+    private ArrayList<Baza> favorit = new ArrayList<>();
     private Context nContext;
 
     public ShoppingViewAdapter(Context nContext) {
@@ -43,14 +47,27 @@ public class ShoppingViewAdapter extends RecyclerView.Adapter<ShoppingViewAdapte
         holder.parent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(nContext, produkt.get(position).getName() + " selected.", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(nContext, ProduktActivity.class);
+                intent.putExtra(PRODUKT_ID_KEY,produkt.get(position).getId());
+                nContext.startActivity(intent);
             }
         });
+        holder.add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(nContext, "dodano", Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 
     @Override
     public int getItemCount() {
         return produkt.size();
+    }
+
+    public ShoppingViewAdapter(ArrayList<Baza> favorit) {
+        this.favorit = favorit;
     }
 
     public void setProdukt(ArrayList<Baza> produkt) {
@@ -63,13 +80,14 @@ public class ShoppingViewAdapter extends RecyclerView.Adapter<ShoppingViewAdapte
         private ImageView imgShop;
         private TextView txtIme;
         private TextView txtCijena;
+        private ImageView add;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             parent = itemView.findViewById(R.id.parent);
             imgShop = itemView.findViewById(R.id.imgShop);
             txtIme = itemView.findViewById(R.id.textProdukt);
             txtCijena = itemView.findViewById(R.id.textcijena);
-
+            add = itemView.findViewById(R.id.add1);
 
         }
     }

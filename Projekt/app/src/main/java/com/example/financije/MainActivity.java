@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button shoppingBtn, troskoviBtn, predictionBtn, helpBtn;
+    private Button shoppingBtn, troskoviBtn, predictionBtn, helpBtn,shoppingList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,12 +39,20 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        shoppingList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ShoppingListActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void initViews(){
         shoppingBtn = findViewById(R.id.shoppingBtn);
         troskoviBtn = findViewById(R.id.troskoviBtn);
         predictionBtn = findViewById(R.id.predictionBtn);
+        shoppingList = findViewById(R.id.shoppingList);
 
     }
 }

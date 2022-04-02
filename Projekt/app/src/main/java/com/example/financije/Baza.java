@@ -1,34 +1,25 @@
 package com.example.financije;
 
 public class Baza {
+    private int id;
     private String name;
     private String price;
     private String link;
-    private String tag;
-    private String ducan;
 
-    public void setTag(String tag) {
-        this.tag = tag;
-    }
 
-    public void setDucan(String ducan) {
-        this.ducan = ducan;
-    }
-
-    public String getTag() {
-        return tag;
-    }
-
-    public String getDucan() {
-        return ducan;
-    }
-
-    public Baza(String name, String price, String link, String tag, String ducan) {
+    public Baza(String name, String price, String link, int id) {
         this.name = name;
         this.price = price;
         this.link = link;
-        this.tag = tag;
-        this.ducan = ducan;
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {

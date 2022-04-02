@@ -27,9 +27,10 @@
         android:text="Troskovi"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.271" />
 
     <Button
         android:id="@+id/shoppingBtn"
@@ -48,8 +49,18 @@
         android:text="Analiza"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/shoppingBtn"
-        app:layout_constraintVertical_bias="0.42" />
+        app:layout_constraintVertical_bias="0.643" />
+
+    <Button
+        android:id="@+id/shoppingList"
+        android:layout_width="113dp"
+        android:layout_height="82dp"
+        android:text="Shopping lista"
+        app:layout_constraintBottom_toTopOf="@+id/predictionBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shoppingBtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
