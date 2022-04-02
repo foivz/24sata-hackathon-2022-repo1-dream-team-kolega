@@ -22,14 +22,15 @@ public class Utils {
         }
     }
 
-    private static void initData()
+    private void initData()
     {
+        allProdukt.add(new Baza("https://i.stack.imgur.com/SNKGt.png", "Lopov", "17.99", "internet", "wifi", 5000));
 
         try {
 
             // Create an object of filereader
             // class with CSV file as a parameter.
-            FileReader filereader = new FileReader("database.csv");
+            FileReader filereader = new FileReader("C:\\Users\\Rikard\\Documents\\GitHub\\24sata-hackathon-2022-repo1-dream-team-kolega\\database2.csv");
 
             // create csvReader object passing
             // file reader as a parameter
@@ -41,6 +42,7 @@ public class Utils {
                 for (String cell : nextRecord) {
                     String[] middleman = cell.split("\",\"");
                     allProdukt.add(new Baza(middleman[0], middleman[1], middleman[2], middleman[3], middleman[4], parseInt(middleman[5])));
+
                 }
 
             }
