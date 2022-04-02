@@ -3,15 +3,19 @@ package com.example.financije;
 public class Baza {
     private int id;
     private String name;
-    private String price;
+    private double price;
     private String link;
+    private String tag;
+    private String store;
 
 
-    public Baza(String name, String price, String link, int id) {
+    public Baza(String name, double price, String link,int id, String tag, String store) {
+        this.id = id;
         this.name = name;
         this.price = price;
         this.link = link;
-        this.id = id;
+        this.tag = tag;
+        this.store = store;
     }
 
     public int getId() {
@@ -20,6 +24,26 @@ public class Baza {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public String getTag() {
+        return tag;
+    }
+
+    public void setTag(String tag) {
+        this.tag = tag;
+    }
+
+    public String getStore() {
+        return store;
+    }
+
+    public void setStore(String store) {
+        this.store = store;
     }
 
     public String getName() {
@@ -31,11 +55,7 @@ public class Baza {
     }
 
     public String getPrice() {
-        return price;
-    }
-
-    public void setPrice(String price) {
-        this.price = price;
+        return String.valueOf(price);
     }
 
     public String getLink() {
