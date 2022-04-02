@@ -55,5 +55,9 @@ public class MainActivity extends AppCompatActivity {
         shoppingList = findViewById(R.id.shoppingList);
 
     }
+    public void Family(View view){
+        Intent intent = new Intent(MainActivity.this, FamilyActivity.class);
+        startActivity(intent);
+    }
 }
 

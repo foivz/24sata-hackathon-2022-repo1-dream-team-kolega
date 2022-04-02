@@ -10,9 +10,9 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:scaleX="0.5"
-        android:scaleY="0.5"
+        android:scaleX="1"
+        android:scaleY="1"
         app:srcCompat="@drawable/untitled"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="86dp" />
+        tools:layout_editor_absoluteY="199dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

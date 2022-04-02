@@ -8,7 +8,7 @@ import android.os.Handler;
 
 public class LoadingActivity extends AppCompatActivity {
 
-    boolean isLogedIn=true;//TODO:Nesto bolje od ovog
+    boolean isLogedIn=false;//TODO:Nesto bolje od ovog
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +25,7 @@ public class LoadingActivity extends AppCompatActivity {
 
         Intent intent;
         if (isLogedIn==false) intent=new Intent(LoadingActivity.this,LoginActivity.class);
-        else intent=new Intent(LoadingActivity.this,MainActivity.class);
+        else intent=new Intent(LoadingActivity.this,FamilyActivity.class);
         startActivity(intent);
     }
 }

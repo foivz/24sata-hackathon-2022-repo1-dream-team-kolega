@@ -111,7 +111,7 @@ public class LoginActivity extends AppCompatActivity {
             } else {
 
                 Toast.makeText(this, family.getText().toString() + " posoji i sifra je dobra", Toast.LENGTH_SHORT).show();
-                Intent intent=new Intent(LoginActivity.this,MainActivity.class);
+                Intent intent=new Intent(LoginActivity.this,FamilyActivity.class);
                 startActivity(intent);
             }
         }
@@ -125,7 +125,7 @@ public class LoginActivity extends AppCompatActivity {
             else {
                 Toast.makeText(this, "Registrirani ste. Nastavljamo na postavke obitelji i prijevoza", Toast.LENGTH_SHORT).show();
                 users.add(new User(family.getText().toString(),password.getText().toString()));
-                Intent intent=new Intent(LoginActivity.this,AutoActivity.class);
+                Intent intent=new Intent(LoginActivity.this,FamilyActivity.class);
                 startActivity(intent);
 
             }
