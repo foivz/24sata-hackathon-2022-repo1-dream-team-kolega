@@ -24,13 +24,13 @@ public class Utils {
 
     private void initData()
     {
-        allProdukt.add(new Baza("https://i.stack.imgur.com/SNKGt.png", "Lopov", "17.99", "internet", "wifi", 5000));
 
         try {
+            allProdukt.add(new Baza("https://i.stack.imgur.com/SNKGt.png", "Lopov", "17.99", "internet", "wifi", 5000));
 
             // Create an object of filereader
             // class with CSV file as a parameter.
-            FileReader filereader = new FileReader("C:\\Users\\Rikard\\Documents\\GitHub\\24sata-hackathon-2022-repo1-dream-team-kolega\\database2.csv");
+            FileReader filereader = new FileReader("C:\\Users\\haka\\Documents\\GitHub\\24sata-hackathon-2022-repo1-dream-team-kolega\\database2.csv");
 
             // create csvReader object passing
             // file reader as a parameter
