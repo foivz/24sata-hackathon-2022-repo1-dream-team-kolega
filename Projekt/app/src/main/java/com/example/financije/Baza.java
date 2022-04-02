@@ -5,11 +5,11 @@ public class Baza {
     private String name;
     private String store;
     private String tag;
-    private Double price;
+    private String price;
     private String link;
 
 
-    public Baza(String link, String name, Double price, String store, String tag, int id) {
+    public Baza(String link, String name, String price, String store, String tag, int id) {
         this.link = link;
         this.name = name;
         this.price = price;
@@ -34,11 +34,11 @@ public class Baza {
         this.name = name;
     }
 
-    public Double getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(Double price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 

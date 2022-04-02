@@ -1,6 +1,5 @@
 package com.example.financije;
 
-import static java.lang.Double.parseDouble;
 import static java.lang.Integer.parseInt;
 
 import com.opencsv.CSVReader;
@@ -41,7 +40,7 @@ public class Utils {
             while ((nextRecord = csvReader.readNext()) != null) {
                 for (String cell : nextRecord) {
                     String[] middleman = cell.split("\",\"");
-                    allProdukt.add(new Baza(middleman[0], middleman[1], parseDouble(middleman[2]), middleman[3], middleman[4], parseInt(middleman[5])));
+                    allProdukt.add(new Baza(middleman[0], middleman[1], middleman[2], middleman[3], middleman[4], parseInt(middleman[5])));
                 }
 
             }
