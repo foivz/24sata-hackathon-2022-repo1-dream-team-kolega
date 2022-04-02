@@ -25,7 +25,7 @@ public class shoppingActivity extends AppCompatActivity {
         shoopingRec.setLayoutManager(new GridLayoutManager(this,2));
 
         ArrayList<Baza> produkt = new ArrayList<>();
-        produkt.add(new Baza())
+
         adapter.setProdukt(produkt);
     }
 }
