@@ -2,7 +2,6 @@ import scrapy
 from hackscraper.items import HackscraperItem
 from scrapy.loader import ItemLoader
 
-
 class HackSpider(scrapy.Spider):
     name = 'hacker'
     start_urls = ['https://glovoapp.com/hr/hr/zagreb/tommy-zagreb/?content=pice-sc.104972889%2Fpivo-c.561338429',
@@ -189,6 +188,8 @@ class HackSpider(scrapy.Spider):
                   'https://glovoapp.com/hr/hr/zagreb/lonia/?content=domacinstvo-i-kucni-ljubimci-sc.102429031%2Finsekticidi-c.547638752',
                   'https://glovoapp.com/hr/hr/zagreb/lonia/?content=skolski-pribor-sc.102429032%2Fskolski-pribor-c.547638754'
                   ]
+
+
 
     def parse(self, response):
 
